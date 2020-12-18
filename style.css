@@ -1,1 +1,37 @@
 /* CSS style */
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	margin: 3% 15%;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-auto-rows: auto;
+}
+
+#title {
+	grid-column: span 12;
+}
+
+.nav-bar {
+	/* width: 100%; */
+	display: flex;
+	/* align-content: center; */
+	/* justify-content: flex-end; */
+}
+
+#feature {
+	grid-column: span 12;
+}
+
+.nav-link {
+	margin-left: auto;
+	display: flex;
+}
+.nav-link * {
+	padding: 10px;
+	align-self: center;
+	text-decoration: none;
+	color: whitesmoke;
+}
