@@ -43,7 +43,7 @@ body {
 .heading {
 	color: #2dfdfc;
 	opacity: 0.8;
-	font-size: 87px;
+	font-size: 90px;
 	text-align: center;
 	margin: 15% 0 350px;
 }
@@ -73,7 +73,25 @@ body {
 .intro {
 	grid-row: span 2;
 	grid-column: span 4;
+
+	padding: 15% 15% 15% 15%;
+	line-height: 1;
+
+	background-color: turquoise;
+	color: white;
 }
+.intro * {
+	margin: 10% 0;
+}
+.client-info {
+	font-size: 60px;
+	margin-right: 60%;
+}
+.text {
+	line-height: 1.3;
+	font-size: 28px;
+}
+
 .image {
 	width: 100%;
 	height: 100%;
@@ -86,19 +104,59 @@ body {
 .large {
 	grid-column: 5 / span 8;
 }
+
 /* .photographer {
 	grid-column: span 4;
 } */
+
 .case-study {
 	grid-column: 5 / span 8;
+	background-color: blue;
+	color: wheat;
 	/* padding needed to match photograher */
+	padding: 10%;
 }
-
-@media screen and (max-width: 800px) {
+.case-study * {
+	line-height: 1.5;
+	margin: 5% 5%;
+}
+.about-heading {
+	font-size: 40px;
+}
+@media screen and (max-width: 830px) {
 	.heading {
 		font-size: 60px;
 	}
 	.scroll {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 588px) {
+	.grid-container {
+		text-align: center;
+	}
+	.intro {
+		grid-row: span 1;
+		grid-column: span 12;
+		padding: 10% 10% 10% 10%;
+	}
+	.client-info {
+		font-size: 50px;
+		margin-right: 0;
+		text-align: center;
+	}
+	.small {
+		grid-column: span 6;
+	}
+	.large {
+		grid-column: span 12;
+	}
+	.case-study {
+		grid-column: span 12;
+	}
+	.photographer {
+		/* photographer */
 		display: none;
 	}
 }
