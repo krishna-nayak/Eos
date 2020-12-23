@@ -126,6 +126,21 @@ span {
 	font-size: 38px;
 }
 
+.btn {
+	background-color: transparent;
+	border: 5px solid #fff;
+	padding: 15px 18px;
+	font-size: 0.9rem;
+	font-weight: 800;
+}
+
+.contact-btn {
+	color: #3624ea;
+}
+.case-study-btn {
+	color: #fff;
+}
+
 /* Footer */
 #footer {
 	grid-column: span 12;
