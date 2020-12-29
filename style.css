@@ -11,8 +11,6 @@ body {
 	grid-template-columns: repeat(12, 1fr);
 	grid-auto-rows: auto;
 	font-family: "Ubuntu", sans-serif;
-
-	/* background-color: #999; */
 }
 span {
 	color: #fff;
@@ -23,7 +21,7 @@ span {
 }
 
 .title-image {
-	height: 951px;
+	height: 100vh;
 	background-image: url("images/head.png");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -51,14 +49,15 @@ span {
 	opacity: 0.8;
 	font-size: 90px;
 	text-align: center;
-	margin: 15% 0 350px;
+	margin-top: 15%;
 }
 
 .scroll {
-	position: -webkit-sticky;
-	margin-top: 200px;
-	position: sticky;
+	position: absolute;
+	left: 0;
+	right: 0;
 	bottom: 0;
+	margin: 0 auto;
 	text-align: center;
 	color: whitesmoke;
 }
